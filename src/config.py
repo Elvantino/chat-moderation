@@ -58,7 +58,7 @@ SEED_LEXICON_PATH = LEXICON_DIR / "seed_lexicon.txt"
 # Hugging Face Hub repo holding the trained weights (R7: no large files in git).
 # After `python -m src.hub upload --repo <user>/<name>`, put the repo id here
 # (or set CHATMOD_HF_REPO) so `python app.py` downloads missing weights itself.
-HF_REPO_ID = os.environ.get("CHATMOD_HF_REPO", "")
+HF_REPO_ID = os.environ.get("CHATMOD_HF_REPO", "https://huggingface.co/ELVANTINO/chat-moderation-models")
 
 # Optional human-readable hardware description for the results table,
 # e.g. "Intel Core i7-11370H, 32 GB RAM". Falls back to auto-detected CPU name.
