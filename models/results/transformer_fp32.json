@@ -1,0 +1,11 @@
+{
+  "model": "BERT-base (fp32)",
+  "threshold": 0.6399999999999999,
+  "val_macro_f1": 0.8835427889895731,
+  "train_seconds": 807.395107261,
+  "n_train": 6000,
+  "epochs": 1.0,
+  "peak_vram_gb": 0.0,
+  "n_val_for_threshold": 4000,
+  "size_mb": 418.5713539123535
+}

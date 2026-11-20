@@ -1,0 +1,13 @@
+{
+  "source": "Jigsaw Toxic Comment Classification Challenge (train.csv)",
+  "n_total": 159571,
+  "seed": 42,
+  "max_rows": null,
+  "n_train": 127655,
+  "pct_offensive_train": 10.167247659707806,
+  "n_val": 15958,
+  "pct_offensive_val": 10.170447424489284,
+  "n_test": 15958,
+  "pct_offensive_test": 10.170447424489284,
+  "pct_offensive": 10.167887648758233
+}

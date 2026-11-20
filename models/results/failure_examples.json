@@ -1,0 +1,356 @@
+{
+  "models": {
+    "lexicon_rule": {
+      "model": "Lexicon rule (edit distance)",
+      "false_positives": [
+        {
+          "text": "very often, I find that others are on the ball already. Here's something you'll probably find useful -)",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 1.0
+        },
+        {
+          "text": "Aha, closer perusal suggests that I can use Template:PD-old-70.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 1.0
+        },
+        {
+          "text": "My favourite kiddie is Josh H as he and I are very fond of cucumber destruction. (anus)",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 1.0
+        },
+        {
+          "text": "What Do You Mean? \n\nI'm curious what do you mean? I'm open for cooperation in the matter. What do you propose and thx for not being a jerk about it.  mcelite",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 1.0
+        },
+        {
+          "text": "for example i'm from Central italy(Marche) and i have light brown hair and blue-green eyes , i'm white or black?",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 1.0
+        }
+      ],
+      "false_negatives": [
+        {
+          "text": "I am not here to be constructive, I am here to prove that Wikipedia is nothing but a bunch of hypocrites and liars.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0
+        },
+        {
+          "text": "Drop dead \n\nDrop dead.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0
+        },
+        {
+          "text": "Actually, you are the cockroach that followed me to the notice board, and repeatedly comes back to revert what I had written. FYI.207.161.232.45",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0
+        },
+        {
+          "text": "NOW! REMOVE IT FROM YOUR SITE NOW! YOU DAMNED THIEVES!",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0
+        },
+        {
+          "text": "I think you're being a hypocrite. 207.97.213.169",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0
+        }
+      ],
+      "n_fp": 1013,
+      "n_fn": 471
+    },
+    "baseline": {
+      "model": "TF-IDF + LogReg",
+      "false_positives": [
+        {
+          "text": "LOL PENIS! \n\nLOL!\n\nI AM TALKING TO YOU SO THIS SHIT IS NOT VANDALISING!",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9999977350234985
+        },
+        {
+          "text": "Copyright MXMXLI BY ASS_JH GY}}",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9994915127754211
+        },
+        {
+          "text": "Khurki is a dumb Assk Jeeves?",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9994057416915894
+        },
+        {
+          "text": "Your a disgrace Dan stop making up silly stuff about the wombats",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9985137581825256
+        },
+        {
+          "text": "guess what \n\nyour retarded",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9942894577980042
+        }
+      ],
+      "false_negatives": [
+        {
+          "text": "fake barnstars and add them to other editors pages.  This is deceptive and disruptive.  Thanks!",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.006023444700986147
+        },
+        {
+          "text": "Already left it on the other page \n\nSO EITHER DISCUSS IT OR BE BANNED FROM WIKIPEDIA.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.011147171258926392
+        },
+        {
+          "text": "Current Squad \n\nNo FOOKIN AROUND WITH IT, alright!",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.011544615030288696
+        },
+        {
+          "text": "Removing warnings is considered anger that other people type bull**** on my discussion page. Just for your info.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.019808609038591385
+        },
+        {
+          "text": "I count four (4) rabid members of the furluminati, intent on crushing all opposing points of view, assuming that 1 or more are not simply sockpuppets.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.02159333974123001
+        }
+      ],
+      "n_fp": 290,
+      "n_fn": 330
+    },
+    "neural_net": {
+      "model": "Word2Vec + FFNN (SGD)",
+      "false_positives": [
+        {
+          "text": "Copyright MXMXLI BY ASS_JH GY}}",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9999438524246216
+        },
+        {
+          "text": "LOL PENIS! \n\nLOL!\n\nI AM TALKING TO YOU SO THIS SHIT IS NOT VANDALISING!",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9998124241828918
+        },
+        {
+          "text": "Khurki is a dumb Assk Jeeves?",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9993139505386353
+        },
+        {
+          "text": "Not at this time, fag.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9989204406738281
+        },
+        {
+          "text": "Is Crones that disease where you constantly have to go poo? Ever soiled your pants?",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9975757002830505
+        }
+      ],
+      "false_negatives": [
+        {
+          "text": "Already left it on the other page \n\nSO EITHER DISCUSS IT OR BE BANNED FROM WIKIPEDIA.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.010841067880392075
+        },
+        {
+          "text": "I count four (4) rabid members of the furluminati, intent on crushing all opposing points of view, assuming that 1 or more are not simply sockpuppets.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.014876739121973515
+        },
+        {
+          "text": "contador \n\nG\nO\n\nF\nU\nC\nK\n\nY\nO\nU\nR\nS\nE\nL\nF\n\nLove dc",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.022275013849139214
+        },
+        {
+          "text": "Materials \n\nWhat are they using to contain whatever they're smuggling? Condoms and seran wrap?",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.03850700706243515
+        },
+        {
+          "text": "I've requested a change to Wolfpuss - congratulations to all dirty thinkers in our community. (!) I submit to your naughtiness.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.04446307569742203
+        }
+      ],
+      "n_fp": 328,
+      "n_fn": 443
+    },
+    "bert_fp32": {
+      "model": "BERT-base (fp32)",
+      "false_positives": [
+        {
+          "text": "Wil Wheaton\nWil Wheaton loves star wars you jerk",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9748748540878296
+        },
+        {
+          "text": "Listen pal, I do things my way, and you think your so hotsie totsie, too bad yoou're not getting inside me.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9743660688400269
+        },
+        {
+          "text": "friends \n\nI and Jxy are two damned friends who use the same damned computer! Take it easy! Ciao,",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9739960432052612
+        },
+        {
+          "text": "=WOT A SELF-Important, pompous ballbag",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.973075807094574
+        },
+        {
+          "text": "your hot dog vendor will get you one day. gooooo pancreatic bad-ness!",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9714730978012085
+        }
+      ],
+      "false_negatives": [
+        {
+          "text": "I AM ADDING REFERENCES AND AM REMOVING THE TAGS AS I GO. SO STICK YOUR LAST WARNING!!!",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.02018009126186371
+        },
+        {
+          "text": "Stop writing on my T.P. I have nothing further to discuss with you given that you lack a bsinc education or diplomacy",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.022126579657197
+        },
+        {
+          "text": "Look here, you can't sock puppet this this image in to avoid the 3RR. You've been warned. Read WP:3RR",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.026351194828748703
+        },
+        {
+          "text": "This is for removing my post on 100% \n\nI'm going to DDOS your toaster for this.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.026445897296071053
+        },
+        {
+          "text": "Already left it on the other page \n\nSO EITHER DISCUSS IT OR BE BANNED FROM WIKIPEDIA.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.028047777712345123
+        }
+      ],
+      "n_fp": 459,
+      "n_fn": 373
+    },
+    "bert_int8": {
+      "model": "BERT-base (dynamic INT8)",
+      "false_positives": [
+        {
+          "text": "Listen pal, I do things my way, and you think your so hotsie totsie, too bad yoou're not getting inside me.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9094620943069458
+        },
+        {
+          "text": "Wil Wheaton\nWil Wheaton loves star wars you jerk",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9038387537002563
+        },
+        {
+          "text": "Don't threaten me pov warrior.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.9035062193870544
+        },
+        {
+          "text": "What the hell happened to this dude?",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.8904200196266174
+        },
+        {
+          "text": "Argh\n\nBerserk button. Get a better catchphrase ,fruitcake.",
+          "true": "Clean",
+          "pred": "Offensive",
+          "prob_offensive": 0.8789111971855164
+        }
+      ],
+      "false_negatives": [
+        {
+          "text": "Stop writing on my T.P. I have nothing further to discuss with you given that you lack a bsinc education or diplomacy",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.055747032165527344
+        },
+        {
+          "text": "fake barnstars and add them to other editors pages.  This is deceptive and disruptive.  Thanks!",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.06213892996311188
+        },
+        {
+          "text": "Wikistalker and sock puppet\nLay off.  I will have recourse.  You are not immune.   Stan",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.06640108674764633
+        },
+        {
+          "text": "Censorship and abuse of oversight. \n\nPlease die very slowly and painfully.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.07253815978765488
+        },
+        {
+          "text": "Tiptoety your judgemts seems to consits of he;s been blocked before, so must be guilty. That indicates a very dull mind.",
+          "true": "Offensive",
+          "pred": "Clean",
+          "prob_offensive": 0.0755898579955101
+        }
+      ],
+      "n_fp": 333,
+      "n_fn": 492
+    }
+  },
+  "slide_example": {
+    "model": "BERT-base (dynamic INT8)",
+    "text": "Stop writing on my T.P. I have nothing further to discuss with you given that you lack a bsinc education or diplomacy",
+    "true": "Offensive",
+    "pred": "Clean",
+    "prob_offensive": 0.055747032165527344
+  }
+}

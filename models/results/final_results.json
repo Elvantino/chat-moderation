@@ -1,0 +1,86 @@
+{
+  "n_test": 15958,
+  "runs": 200,
+  "env": {
+    "hardware": "Intel(R) Xeon(R) Processor @ 2.30GHz (2 vCPUs, cloud VM), 7 GB RAM, CPU only",
+    "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+    "cpu_count": 2,
+    "torch": "2.5.1+cu124",
+    "torch_threads": 2,
+    "cuda_available": false
+  },
+  "rows": [
+    {
+      "key": "lexicon_rule",
+      "tier": "Rule baseline",
+      "model": "Lexicon rule (edit distance)",
+      "area": "Area B \u2013 Classical NLP",
+      "precision": "rules",
+      "macro_f1": 0.7777388597967596,
+      "size_mb": 0.0015993118286132812,
+      "threshold": 0.5,
+      "latency_mean_ms": 0.7065834549916872,
+      "latency_p50_ms": 0.3324519998386677,
+      "latency_p95_ms": 2.1145910000086587,
+      "latency_runs": 200
+    },
+    {
+      "key": "baseline",
+      "tier": "Baseline",
+      "model": "TF-IDF + LogReg",
+      "area": "Area B \u2013 Classical NLP",
+      "precision": "fp64",
+      "macro_f1": 0.8925086691989267,
+      "size_mb": 4.329923629760742,
+      "threshold": 0.63,
+      "latency_mean_ms": 2.838180794992695,
+      "latency_p50_ms": 1.454280999951152,
+      "latency_p95_ms": 5.3312889999688196,
+      "latency_runs": 200
+    },
+    {
+      "key": "neural_net",
+      "tier": "Neural Net",
+      "model": "Word2Vec + FFNN (SGD)",
+      "area": "Area A \u2013 Neural Networks",
+      "precision": "fp32",
+      "macro_f1": 0.863484005446385,
+      "size_mb": 34.52865791320801,
+      "threshold": 0.8499999999999999,
+      "latency_mean_ms": 0.31379292498286304,
+      "latency_p50_ms": 0.2224549998572911,
+      "latency_p95_ms": 0.7302950002667785,
+      "latency_runs": 200
+    },
+    {
+      "key": "bert_fp32",
+      "tier": "Transformer",
+      "model": "BERT-base (fp32)",
+      "area": "Area C \u2013 Transformers",
+      "precision": "fp32",
+      "macro_f1": 0.8605964636064334,
+      "size_mb": 418.5713539123535,
+      "threshold": 0.6399999999999999,
+      "latency_mean_ms": 84.56938040999376,
+      "latency_p50_ms": 74.856243999875,
+      "latency_p95_ms": 136.51150399982726,
+      "latency_runs": 200
+    },
+    {
+      "key": "bert_int8",
+      "tier": "Quantized",
+      "model": "BERT-base (dynamic INT8)",
+      "area": "Area D \u2013 Efficient Models",
+      "precision": "int8 (Linear) + fp32 (embeddings)",
+      "macro_f1": 0.8520666126839332,
+      "size_mb": 173.99249744415283,
+      "threshold": 0.41999999999999993,
+      "latency_mean_ms": 38.67069835499933,
+      "latency_p50_ms": 31.535658999928273,
+      "latency_p95_ms": 74.41690399991785,
+      "latency_runs": 200
+    }
+  ],
+  "missing": []
+}

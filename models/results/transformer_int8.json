@@ -1,0 +1,8 @@
+{
+  "model": "BERT-base (dynamic INT8)",
+  "val_macro_f1": 0.8718081674041298,
+  "threshold": 0.41999999999999993,
+  "n_val_for_threshold": 4000,
+  "size_mb": 173.99249744415283,
+  "size_fp32_mb": 418.5713539123535
+}

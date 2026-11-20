@@ -1,0 +1,58 @@
+# Seed lexicon for the edit-distance matcher (used for masking in the app).
+# One entry per line.  "word*" = prefix match, "two words" = phrase match.
+# Entries are normalised with src.preprocessing.normalize_text before use.
+# src/baseline.py also writes data/lexicon/learned_lexicon.txt from the
+# strongest positive TF-IDF + LR features; both files are merged at load time.
+#
+# Extend this list for your deployment (e.g. slurs / identity-based hate terms).
+
+# --- profanity (prefix forms catch -ing, -er, -ed ...) ---
+fuck*
+motherfuck*
+shit*
+bullshit
+bitch*
+bastard*
+asshole*
+dumbass
+jackass
+cunt*
+dick
+dickhead*
+cock
+cocksuck*
+pussy
+whore*
+slut*
+wanker*
+twat*
+prick
+crap
+damn
+piss*
+douche*
+
+# --- insults ---
+idiot*
+moron*
+stupid*
+retard*
+imbecile*
+loser*
+dumb
+pathetic
+scum*
+trash
+worthless
+ugly
+fag*
+nazi*
+pig
+
+# --- threats / harassment phrases ---
+kill yourself
+kill you
+kys
+go die
+shut up
+i hope you die

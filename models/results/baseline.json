@@ -1,0 +1,14 @@
+{
+  "model": "TF-IDF + LogReg",
+  "macro_f1": 0.8925086691989267,
+  "val_macro_f1": 0.902087788613132,
+  "threshold": 0.63,
+  "size_mb": 4.329923629760742,
+  "train_seconds": 194.41029247400002,
+  "n_train": 127655,
+  "n_test": 15958,
+  "latency_mean_ms": 1.5466002350015629,
+  "latency_p50_ms": 1.146482000024207,
+  "latency_p95_ms": 3.445617000011225,
+  "latency_runs": 200
+}
