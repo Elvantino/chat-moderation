@@ -1,4 +1,4 @@
-# Real-Time Chat Moderation – How to Run
+   # Real-Time Chat Moderation – How to Run
 
 **SWE015 – Introduction to Large Language Models · Individual Homework**
 **Student:** Matin Jebraeili · **ID:** 2309115105 · **Use Case 4:** Real-Time Chat Moderation (English)
@@ -17,6 +17,10 @@ test set and uses a **dynamic-INT8 quantized BERT** as its primary model. The la
 | Transformer | `bert-base-uncased`, fine-tuned | C – Transformers |
 | Quantized Transformer | the same BERT after dynamic INT8 quantization (**used by the app**) | D – Efficient models |
 
+> **Links:** code – https://github.com/Elvantino/chat-moderation ·
+> trained weights – https://huggingface.co/ELVANTINO/chat-moderation-models
+> (`python app.py` downloads them automatically if the `models/` folder is missing).
+>
 > **Slides:** `docs/presentation.pdf` (12 slides) holds the measured results below.
 > `docs/presentation.pptx` is the template, filled by `scripts/fill_slides.py`.
 
